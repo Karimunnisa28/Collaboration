@@ -1,0 +1,98 @@
+.navbar1 {
+    background: linear-gradient(90deg, #a55166, #c56767);
+    padding: 15px 20px;
+    position: fixed; 
+    gap: 20px;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+    display: flex;
+   align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    
+}
+
+.logo i {
+    color: #FFD700;
+    font-size: 1.8rem;
+}
+.navbar1 a {
+    
+   
+    color: white;
+    padding: 1px 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+.navbar1 a:hover,
+.navbar1 a.active {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+.search-container {
+    position: absolute;
+    right: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.search-bar {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.search-btn, .cart-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: white;
+    color: #c56767;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.search-btn:hover, .cart-btn:hover {
+    background-color: #f0f0f0;
+}
+.navbar2 {
+    position: fixed; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 12px 0;
+    text-align: center;
+    top: 50px; 
+    left: 0; 
+    right: 0; 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    z-index: 1050; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.navbar2 a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+.navbar2 a:hover {
+    background-color: rgba(165, 81, 102, 0.1);
+    border-radius: 5px;
+    color: #a55166;
+}

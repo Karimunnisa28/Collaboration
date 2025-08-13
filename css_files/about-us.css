@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E7DAE7;
+    color: #4B4B4B;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #A55166;
+}
+.navbar .nav-link,
+.navbar-brand {
+    color: white !important;
+}
+
+/* Headings */
+h1, h2, h5 {
+    color: #A55166;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-icon {
+    font-size: 3rem;
+    color: #A55166;
+    margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonial {
+    background-color: #f3d8e0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    background-color: #A55166;
+    color: white;
+}
