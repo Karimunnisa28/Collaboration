@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup - LuxeCosmetics</title>
+    <link rel="stylesheet" href="makeup2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- <header class="navbar">
+        <div class="logo">💄 LuxeCosmetics</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="makeup.html" class="active">Makeup</a>
+            <a href="#">Skincare</a>
+            <a href="#">Fragrance</a>
+            <a href="#">About</a>
+        </nav>
+        <input type="text" placeholder="Search..." class="search-bar">
+    </header> -->
+
+    <nav class="navbar1">
+         <div class="logo">
+        <i class="fas fa-crown"></i>
+        <span>BellaBeauty</span>
+    </div>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="search-btn">🔍</button>
+            <a href="#cart" class="cart-btn">🛒 Cart</a>
+        </div> 
+    </nav>
+
+    <nav class="navbar2">
+        <a href="#home">Categories</a>
+        <a href="#about">Offer</a>
+        <a href="#products">New Arrivals</a>
+        <a href="#contact">Brand</a>
+    </nav>
+
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Makeup Categories</h2>
+        <div class="category-list">
+            <div class="category" onclick="window.location.href='lipstick.html'">
+                <img src="Images/lipstick_symbol.jpg" alt="Lips">
+                <p>Lips</p>
+            </div>
+            <div class="category">
+                <img src="Images/face_sysmbol.jpg" alt="Face">
+                <p>Face</p>
+            </div>
+            <div class="category">
+                <img src="Images/eyes_symbol.webp" alt="Eyes">
+                <p>Eyes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="bestsellers">
+        <h2>Bestsellers</h2>
+        <div class="product-grid">
+
+            <!-- Product -->
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal1">
+                <span class="badge bg-danger position-absolute m-2">NEW</span>
+                <img src="Images/lipstick_bs_1.avif" alt="Lipstick" class="img-fluid rounded">
+                <h3 class="mt-2">Lakme Rouge Bloom Powder Matte Lipstick - Blush Peony 206</h3>
+                <p>₹999</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel1">Lakme Rouge Bloom Powder Matte Lipstick</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/lipstick_bs_1.avif" alt="Lipstick" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹999</p>
+                            <p>A lightweight matte lipstick with long-lasting color and smooth finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal2">
+                <!-- <span class="badge bg-danger position-absolute m-2">NEW</span> -->
+                <img src="Images/foundation_bs_1.avif" alt="Foundation" class="img-fluid rounded">
+                <h3 class="mt-2">L’Oreal Paris Infallible 24H Tinted Serum Foundation</h3>
+                <p>₹1,199</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">L’Oreal Paris Infallible 24H Tinted Serum
+                                Foundation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/foundation_bs_1.avif" alt="Foundation" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹1,199</p>
+                            <p>A Lightweight,Tinted, Dewy & Radiant Foundation - Medium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal3">
+                <!-- <span class="badge bg-danger position-absolute m-2">NEW</span> -->
+                <img src="Images/eyeshadow_bs_1.avif" alt="Eyeshadow" class="img-fluid rounded">
+                <h3 class="mt-2">Swiss Beauty Eyeshadow</h3>
+                <p>₹499</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Swiss Beauty Eyeshadow</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/eyeshadow_bs_1.avif" alt="Eyeshadow" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹499</p>
+                            <p>Swiss Beauty Ultimate 9 Pigmented Colors Eyeshadow Palette - Shade 02</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal4">
+                <span class="badge bg-danger position-absolute m-2">NEW</span>
+                <img src="Images/highlighter_bs_1.avif" alt="Highlighter" class="img-fluid rounded">
+                <h3 class="mt-2">Liquid Luminizing Highlighter - Rose</h3>
+                <p>₹949</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Liquid Luminizing Highlighter - Rose</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/highlighter_bs_1.avif" alt="Highlighter" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹949</p>
+                            <p>Peach BlushKay Beauty Hyper Gloss Liquid Luminizing Highlighter - Rose
+                                (8.5ml)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal5">
+                <!-- <span class="badge bg-danger position-absolute m-2">NEW</span> -->
+                <img src="Images/kajal_bs.avif" alt="Kajal" class="img-fluid rounded">
+                <h3 class="mt-2">Lakme Eyeconic Kajal</h3>
+                <p>₹250</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Lakme Eyeconic Kajal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/kajal_bs.avif" alt="Kajal" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹250</p>
+                            <p>Lakme Eyeconic Kajal in Deep Black Twist Up Pencil with Matte Finish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal6">
+                <!-- <span class="badge bg-danger position-absolute m-2">NEW</span> -->
+                <img src="Images/brush_bs.avif" alt="Brush" class="img-fluid rounded">
+                <h3 class="mt-2">Swiss Beauty Professional Face & Eye Brush Set</h3>
+                <p>₹779</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Swiss Beauty Professional Face & Eye Brush
+                                Set</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/brush_bs.avif" alt="Brush" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹779</p>
+                            <p>Swiss Beauty Professional Face & Eye Brush Set SB-F01 (6 pcs)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal7">
+                <!-- <span class="badge bg-danger position-absolute m-2">NEW</span> -->
+                <img src="Images/glow_kit_bs.avif" alt="Glow_kit" class="img-fluid rounded">
+                <h3 class="mt-2">Charlotte Tilbury Blush And Glow Kit</h3>
+                <p>₹3150</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel7"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Charlotte Tilbury Blush And Glow Kit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/glow_kit_bs.avif" alt="Glow_kit" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹3150</p>
+                            <p>Peach Charlotte Tilbury Pillow Talk Iconic Blush And Glow Kit (41g)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="product" data-bs-toggle="modal" data-bs-target="#productModal8">
+               
+                <img src="Images/makeup_bs.avif" alt="lakme" class="img-fluid rounded">
+                <h3 class="mt-2">Peach Lakme No Makeup Makeup Must Haves</h3>
+                <p>₹1055</p>
+            </div> -->
+
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">Peach Lakme No Makeup Makeup Must Haves</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="Images/makeup_bs.avif" alt="lakme" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹1055</p>
+                            <p>Peach Lakme No Makeup Makeup Must Haves (3 pcs)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             -->
+
+
+            <div class="product" data-bs-toggle="modal" data-bs-target="#productModal8">
+                <img src="Images/makeup_bs.avif" alt="lakme" class="img-fluid rounded">
+                <h3 class="mt-2">Peach Lakme No Makeup Makeup Must Haves</h3>
+                <p>₹1055</p>
+                <!-- Heart Favourite Button -->
+                        <input type="checkbox" id="fav8" class="fav-checkbox">
+                        <label for="fav8" class="fav-btn">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-heart-fill"></i>
+                        </label>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+        
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel">
+                                Peach Lakme No Makeup Makeup Must Haves
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body text-center">
+                            <img src="Images/makeup_bs.avif" alt="lakme" class="img-fluid mb-3 rounded">
+                            <p><strong>Price:</strong> ₹1055</p>
+                            <p>Peach Lakme No Makeup Makeup Must Haves (3 pcs)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h3 class="footer-title">
+                            <i class="fas fa-sparkles"></i>
+                            Cosmetics Store
+                        </h3>
+                        <p class="footer-description">
+                            Your one-stop destination for premium beauty products. 
+                            Discover the latest trends and timeless classics to enhance your natural beauty.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="#products"><i class="fas fa-shopping-bag"></i> Products</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                            <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Categories</h4>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-palette"></i> Makeup</a></li>
+                            <li><a href="#"><i class="fas fa-leaf"></i> Skincare</a></li>
+                            <li><a href="#"><i class="fas fa-cut"></i> Hair Care</a></li>
+                            <li><a href="#"><i class="fas fa-spa"></i> Body & Wellness</a></li>
+                            <li><a href="#"><i class="fas fa-spray-can"></i> Fragrance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping Info</a></li>
+                            <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                            <li><a href="#"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Contact Info</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>123 Beauty Street<br>Cosmetic City, CC 12345</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>info@cosmeticsstore.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="newsletter-section">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h4 class="newsletter-title">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe to our Newsletter
+                        </h4>
+                        <p class="newsletter-text">Get the latest beauty tips and exclusive offers!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                                <button class="btn newsletter-btn" type="button">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
