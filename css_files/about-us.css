@@ -10,23 +10,13 @@ body {
     color: #4B4B4B;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #A55166;
-}
-.navbar .nav-link,
-.navbar-brand {
-    color: white !important;
-}
-
-/* Headings */
 h1, h2, h5 {
     color: #A55166;
 }
 
 /* Hero Section */
 .hero {
-    padding: 100px 20px;
+    padding: 150px 20px;
     text-align: center;
 }
 .hero h1 {
@@ -79,8 +69,4 @@ h1, h2, h5 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* Footer */
-footer {
-    background-color: #A55166;
-    color: white;
-}
+
