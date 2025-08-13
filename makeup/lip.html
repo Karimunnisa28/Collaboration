@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lipstick Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css_files/lip.css">
+</head>
+
+<body>
+
+  <nav class="navbar1">
+    <div class="logo">
+      <i class="fas fa-crown"></i>
+      <span>BellaBeauty</span>
+    </div>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <button class="search-btn">🔍</button>
+      <a href="#cart" class="cart-btn">🛒 Cart</a>
+    </div>
+  </nav>
+
+  <nav class="navbar2">
+    <a href="#home">Categories</a>
+    <a href="#about">Offer</a>
+    <a href="#products">New Arrivals</a>
+    <a href="#contact">Brand</a>
+  </nav>
+
+
+
+    <!-- Page Header -->
+    <div class="container my-4">
+      <h2 class="page-title">Lipstick Collection</h2>
+      <p class="page-subtitle">Discover our premium range of long-lasting, vibrant lipsticks</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar Filters -->
+        <div class="col-md-3 filter-section p-4">
+          <h5 class="fw-bold">FILTERS</h5>
+          <label class="mt-3">Price Range</label>
+          <!-- <input type="range" class="form-range" min="0" max="100"> -->
+          <div class="price-range-wrapper">
+            <span class="min-price">₹200</span>
+            <input type="range" class="form-range" min="200" max="2000" step="100" value="200">
+            <span class="max-price">₹2000</span>
+          </div>
+
+          <label class="mt-3">Brand</label>
+          <div>
+            <input type="checkbox"> Maybelline <br>
+            <input type="checkbox"> L'Oreal <br>
+            <input type="checkbox"> MAC <br>
+            <!-- <input type="checkbox"> NARS <br>
+            <input type="checkbox"> Fenty Beauty -->
+          </div>
+
+          <label class="mt-3">Finish</label>
+          <div>
+            <input type="checkbox"> Matte <br>
+            <input type="checkbox"> Glossy <br>
+            <input type="checkbox"> Satin <br>
+            <input type="checkbox"> Metallic
+          </div>
+
+          <label class="mt-3">Color</label>
+          <div>
+            <input type="checkbox"> Red <br>
+            <input type="checkbox"> Pink <br>
+            <input type="checkbox"> Nude
+          </div>
+
+          <button class="btn apply-btn w-100 mt-3">Apply Filters</button>
+          <button class="btn reset-btn w-100 mt-2">Reset All</button>
+        </div>
+
+
+
+        <!-- Product Grid -->
+        <!-- Product Grid -->
+        <div class="col-md-9">
+          <div class="row g-4 p-3">
+
+            <!-- Product 1 -->
+            <div class="col-md-4">
+              <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal1">
+                <img src="../Images/cat_lip_1.avif" class="card-img-top" alt="Lipstick">
+                <div class="card-body">
+                  <h6 class="text-muted">MAYBELLINE</h6>
+                  <h5 class="card-title">Maybelline New York Color Sensational Ultimattes Lipstick</h5>
+                  <p class="price">₹419</p>
+                  <button class="btn add-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+              <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal2">
+                <img src="../Images/cat_lip_2.avif" class="card-img-top" alt="Lipstick">
+                <div class="card-body">
+                  <h6 class="text-muted">LAKME</h6>
+                  <h5 class="card-title">Lakme Forever Matte Lipstick , Purple Diamond</h5>
+                  <p class="price">₹339</p>
+                  <button class="btn add-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+              <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal3">
+                <img src="../Images/cat_lip_3.avif" class="card-img-top" alt="Lipstick">
+                <div class="card-body">
+                  <h6 class="text-muted">SWISS BEAUTY</h6>
+                  <h5 class="card-title">Swiss Beauty Pure Matte Lipstick - 203 Hazelnut</h5>
+                  <p class="price">₹500</p>
+                  <button class="btn add-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+              <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal4">
+                <img src="../Images/cat_lip_4.avif" class="card-img-top" alt="Lipstick">
+                <div class="card-body">
+                  <h6 class="text-muted">L'Oreal Paris</h6>
+                  <h5 class="card-title">L'Oreal Paris Infallible Matte Resistance Liquid Lipstick</h5>
+                  <p class="price">₹699</p>
+                  <button class="btn add-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4">
+              <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal5">
+                <img src="../Images/cat_lip_5.avif" class="card-img-top" alt="Lipstick">
+                <div class="card-body">
+                  <h6 class="text-muted">KIRO</h6>
+                  <h5 class="card-title">KIRO Four Play Non-Stop Airy Matte Liquid Lipstick</h5>
+                  <p class="price">₹1055</p>
+                  <button class="btn add-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4">
+              <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal6">
+                <img src="../Images/cat_lip_6.avif" class="card-img-top" alt="Lipstick">
+                <div class="card-body">
+                  <h6 class="text-muted">LAKME</h6>
+                  <h5 class="card-title">Lakme 9to5 Overtime Shine Hydrating Tinted Lip Gloss Oil</h5>
+                  <p class="price">₹759</p>
+                  <button class="btn add-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- ✅ Modal for Product 1 -->
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <!-- Header with Close -->
+              <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column flex-md-row">
+                <img src="../Images/cat_lip_1.avif" class="img-fluid rounded me-4" alt="Lipstick" style="width: 300px;">
+
+                <div>
+                  <h4>SuperStay Matte Ink Liquid Lipstick
+                    <button class="btn btn-outline-danger btn-sm ms-2" title="Add to Favourites">❤️</button>
+                  </h4>
+                  <p class="text-muted">Brand: MAYBELLINE</p>
+                  <p>Long-lasting matte finish, lightweight formula.</p>
+                  <div class="rating mb-3">⭐⭐⭐⭐☆ (4/5)</div>
+                  <p class="price h5">₹419</p>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Modal for Product 2 -->
+        <div class="modal fade" id="productModal2" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column flex-md-row">
+                <img src="../Images/cat_lip_2.avif" class="img-fluid rounded me-4" alt="Lipstick" style="width: 300px;">
+
+                <div>
+                  <h4>Color Riche Shine Lipstick
+                    <button class="btn btn-outline-danger btn-sm ms-2" title="Add to Favourites">❤️</button>
+                  </h4>
+                  <p class="text-muted">Brand: Lakme</p>
+                  <p>Lakme Forever Matte Lipstick, Made With French Rose Oil Extracts, Purple Diamond</p>
+                  <div class="rating mb-3">⭐⭐⭐⭐☆ (4.2/5)</div>
+                  <p class="price h5">₹339</p>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Modal for Product 3 -->
+        <div class="modal fade" id="productModal3" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column flex-md-row">
+                <img src="../Images/cat_lip_3.avif" class="img-fluid rounded me-4" alt="Lipstick" style="width: 300px;">
+
+                <div>
+                  <h4>Swiss Beauty Pure Matte Lipstick - 203 Hazelnut
+
+                  </h4>
+                  <p class="text-muted">Brand: SWISS BEAUTY</p>
+                  <p>Swiss Beauty Pure Matte Lipstick - 203 Hazelnut</p>
+                  <div class="rating mb-3">⭐⭐⭐⭐⭐ (5/5)</div>
+                  <p class="price h5">₹500</p>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- product 4 -->
+        <div class="modal fade" id="productModal4" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column flex-md-row">
+                <img src="../Images/cat_lip_4.avif" class="img-fluid rounded me-4" alt="Lipstick" style="width: 300px;">
+
+                <div>
+                  <h4>L'Oreal Paris Infallible Matte Resistance Liquid Lipstick
+
+                  </h4>
+                  <p class="text-muted">Brand: L'Oreal Paris</p>
+                  <p>L'Oreal Paris Infallible Matte Resistance Liquid Lipstick - 635 Worth It Medium</p>
+                  <div class="rating mb-3">⭐⭐⭐⭐⭐ (5/5)</div>
+                  <p class="price h5">₹699</p>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- product 5 -->
+        <div class="modal fade" id="productModal5" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column flex-md-row">
+                <img src="../Images/cat_lip_5.avif" class="img-fluid rounded me-4" alt="Lipstick" style="width: 300px;">
+
+                <div>
+                  <h4>KIRO Four Play Non-Stop Airy Matte Liquid Lipstick
+
+                  </h4>
+                  <p class="text-muted">Brand: KIRO</p>
+                  <p>KIRO Four Play Non-Stop Airy Matte Liquid Lipstick - Supreme Quad
+                    (6ml)</p>
+                  <div class="rating mb-3">⭐⭐⭐⭐⭐ (5/5)</div>
+                  <p class="price h5">₹1055</p>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- product 6 -->
+        <div class="modal fade" id="productModal6" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body d-flex flex-column flex-md-row">
+                <img src="../Images/cat_lip_6.avif" class="img-fluid rounded me-4" alt="Lipstick" style="width: 300px;">
+
+                <div>
+                  <h4>Lakme 9to5 Overtime Shine Hydrating Tinted Lip Gloss Oil
+
+                  </h4>
+                  <p class="text-muted">Brand: LAKME</p>
+                  <p>Lakme 9to5 Overtime Shine Hydrating Tinted Lip Gloss Oil with Hyaluronic Acid - Cocoa Truffle
+(5.3ml)</p>
+                  <div class="rating mb-3">⭐⭐⭐⭐⭐ (5/5)</div>
+                  <p class="price h5">₹759</p>
+
+                  <div class="d-flex gap-3 mt-3">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="container">
+              <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="footer-section">
+                    <h3 class="footer-title">
+                      <i class="fas fa-sparkles"></i>
+                      Cosmetics Store
+                    </h3>
+                    <p class="footer-description">
+                      Your one-stop destination for premium beauty products.
+                      Discover the latest trends and timeless classics to enhance your natural beauty.
+                    </p>
+                    <div class="social-links">
+                      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                      <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                      <li><a href="#products"><i class="fas fa-shopping-bag"></i> Products</a></li>
+                      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                      <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="footer-section">
+                    <h4 class="footer-subtitle">Categories</h4>
+                    <ul class="footer-links">
+                      <li><a href="#"><i class="fas fa-palette"></i> Makeup</a></li>
+                      <li><a href="#"><i class="fas fa-leaf"></i> Skincare</a></li>
+                      <li><a href="#"><i class="fas fa-cut"></i> Hair Care</a></li>
+                      <li><a href="#"><i class="fas fa-spa"></i> Body & Wellness</a></li>
+                      <li><a href="#"><i class="fas fa-spray-can"></i> Fragrance</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="footer-section">
+                    <h4 class="footer-subtitle">Support</h4>
+                    <ul class="footer-links">
+                      <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                      <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping Info</a></li>
+                      <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                      <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                      <li><a href="#"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="contact-info">
+                      <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Beauty Street<br>Cosmetic City, CC 12345</p>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@cosmeticsstore.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Newsletter Subscription -->
+              <div class="newsletter-section">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h4 class="newsletter-title">
+                      <i class="fas fa-paper-plane"></i>
+                      Subscribe to our Newsletter
+                    </h4>
+                    <p class="newsletter-text">Get the latest beauty tips and exclusive offers!</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="newsletter-form">
+                      <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                        <button class="btn newsletter-btn" type="button">
+                          <i class="fas fa-paper-plane"></i>
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <!-- Back to Top Button -->
+          <button class="back-to-top" onclick="scrollToTop()">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
