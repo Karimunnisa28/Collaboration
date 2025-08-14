@@ -22,7 +22,7 @@ html, body {
     height: 500px;
 }
 .navbar1 {
-    background: linear-gradient(90deg, #a55166, #c56767);
+    background: linear-gradient(90deg, #040404, #020202);
     padding: 15px 20px;
     position: fixed; 
     gap: 20px;
@@ -95,7 +95,7 @@ html, body {
 }
 .navbar2 {
     position: fixed; 
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(48, 47, 47, 0.8); 
     padding: 12px 0;
     text-align: center;
     top: 50px; 
@@ -119,6 +119,71 @@ html, body {
     border-radius: 5px;
     color: #a55166;
 }
+
+@media (max-width: 968px) {
+    .navbar1 {
+        flex-direction: row; 
+        gap: 10px;
+        padding: 10px 15px;
+    }
+    .logo {
+        font-size: 1.2rem;
+        position: static; 
+    }
+    .search-container {
+        position: static;
+        margin-left: auto; 
+    }
+    .navbar2 {
+        top: 50px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar1 {
+        padding: 10px 10px;
+        justify-content: space-between;
+    }
+    .navbar2 {
+        top: 45px; 
+        padding: 8px 0;
+        z-index: 1050;
+    }
+    .navbar2 a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    body {
+        padding-top: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar1 {
+        padding: 8px 10px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .logo i {
+        font-size: 1.4rem;
+    }
+    .search-bar {
+        width: 120px;
+        font-size: 12px;
+    }
+    .navbar2 {
+        top: 250px;
+        padding: 6px 0;
+    }
+    .navbar2 a {
+        padding: 5px 8px;
+        font-size: 0.85rem;
+    }
+    
+}
+
 /* Card Hover Effects */
 .card {
     transition: all 0.3s ease;
