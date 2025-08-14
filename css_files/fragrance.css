@@ -35,6 +35,13 @@ body {
     z-index: 1;
 }
 
+/* Remove default link styles */
+.category-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Circle card */
 .category-card {
     background: linear-gradient(135deg, #f8d7da, #fde2e4);
     border-radius: 50%;
@@ -56,19 +63,19 @@ body {
 .category-card:hover {
     transform: scale(1.05);
 }
+
+/* Category text */
 .categories p {
-    font-weight: 500;
+    font-weight: 700; /* bold text */
+    color: #ffffff;
     margin-top: 5px;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 .categories .row > div {
     margin-left: 35px;
     margin-right: 35px;
 }
 
-.category-card {
-    margin: 0 auto;
-}
 
 .section-title {
     font-size: 1.8rem; /* slightly bigger */
