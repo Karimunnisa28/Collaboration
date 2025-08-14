@@ -1,105 +1,283 @@
-/* General Reset */
-* {
+body {
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #E7DAE7;
-    color: #4B4B4B;
-}
-
-/* Navbar */
-.navbar {
-    background-color: #A55166;
-}
-.navbar .nav-link,
-.navbar-brand {
-    color: white !important;
+   background-color: #f7dae7;
+    color: #5a2a3a;
+    line-height: 1.6;
 }
 
 
-/* Headings */
-h1, h2, h5 {
-    color: #A55166;
+.fragrance-banner {
+    position: relative;
+    min-height: 400px;
+    background: url('../images/fragrance/banner1.1.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px; 
+    background-position: center top;
 }
 
-/* Hero Section */
-.hero {
-    padding: 100px 20px;
-    text-align: center;
-    color: #A55166;
-}
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #A55166;
-}
-.hero p {
-    font-size: 1.3rem;
-    margin-top: 10px;
+
+.fragrance-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4); 
 }
 
-/* Section Titles */
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: bold;
+.fragrance-banner > div {
+    position: relative; 
+    z-index: 1;
 }
 
-/* Category Circles */
-.category-circle {
-    width: 120px;
-    height: 120px;
+.category-card {
+    background: linear-gradient(135deg, #f8d7da, #fde2e4);
     border-radius: 50%;
+    width: 120px; 
+    height: 120px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    border: 3px solid #E75480;
-    margin: auto;
     transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.category-circle img {
+.category-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
-.category-circle:hover {
-    transform: scale(1.1);
-}
-.category p {
-    font-weight: 500;
-}
-
-/* Product Card */
-.product-card {
-    position: relative;
-    border: none;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.product-card:hover {
+.category-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
 }
-.wishlist-icon {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    background: rgba(255,255,255,0.9);
-    padding: 6px 8px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    color: #E75480;
-    cursor: pointer;
-    z-index: 10;
-}
-.rating {
-    color: #FFD700;
+.categories p {
     font-weight: 500;
     margin-top: 5px;
+    font-size: 0.95rem;
+}
+.categories .row > div {
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
-/* Footer */
-footer {
-    background-color: #E75480;
+.category-card {
+    margin: 0 auto;
 }
+
+.section-title {
+    font-size: 1.8rem; /* slightly bigger */
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #A55166;
+    text-transform: uppercase; /* all caps for emphasis */
+    letter-spacing: 1.5px; /* spaced out letters */
+    position: relative;
+    display: inline-block;
+}
+
+/* Decorative underline effect */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #A55166;
+    margin-top: 6px;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* On hover, underline expands */
+.section-title:hover::after {
+    width: 80px;
+}
+
+
+/* Scroll wrapper */
+.scroll-wrapper {
+    position: relative;
+}
+
+/* Arrow buttons */
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(165, 81, 102, 0.8);
+    color: white;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 4;
+    transition: background 0.3s ease;
+}
+
+.scroll-arrow:hover {
+    background: rgba(125, 61, 78, 0.9);
+}
+
+.scroll-arrow.left {
+    left: -20px;
+}
+
+.scroll-arrow.right {
+    right: -20px;
+}
+
+/* Keep your existing product scroll styles */
+.product-scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.product-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Product Card Styles (unchanged) */
+.product-card {
+    background: #E2B4C1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 250px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h5 {
+    font-weight: 600;
+    color: #A55166;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    color: #555;
+    height: 45px;
+    overflow: hidden;
+}
+
+.price {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #A55166;
+    margin: 8px 0;
+}
+
+.btn-add {
+    background-color: #A55166;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #7d3d4e;
+}
+/* Modal overlay */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 999;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal content box - product card size */
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 15px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px; /* Product card ka size */
+    text-align: center;
+    animation: scaleIn 0.3s ease-out;
+    position: relative;
+}
+
+/* Modal animation */
+@keyframes scaleIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal img {
+    width: 100%;
+    max-height: 220px; /* product card ke height ke similar */
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.modal h3 {
+    font-size: 1.1rem;
+    color: #A55166;
+    margin-bottom: 8px;
+}
+
+.modal p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.modal .price {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #A55166;
+}
+
+/* Close button */
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.5rem;
+    color: #A55166;
+    cursor: pointer;
+}
+
+
+
+
