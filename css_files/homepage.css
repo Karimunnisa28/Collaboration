@@ -13,7 +13,7 @@ html, body {
     background-color: #f7dae7;
 }
 .navbar1 {
-    background: linear-gradient(90deg, #a55166, #c56767);
+    background: linear-gradient(90deg, #060606, #040404);
     padding: 15px 20px;
     position: fixed; 
     gap: 20px;
@@ -86,7 +86,7 @@ html, body {
 }
 .navbar2 {
     position: fixed; 
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(48, 47, 47, 0.8); 
     padding: 12px 0;
     text-align: center;
     top: 50px; 
@@ -100,7 +100,7 @@ html, body {
 .navbar2 a {
     display: inline-block;
     padding: 8px 20px;
-    color: black;
+    color: rgb(243, 240, 240);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, background 0.3s ease;
@@ -124,7 +124,7 @@ html, body {
 }
 .slides img {
     height: 900px;
-    width: 100%;
+    width: 120%;
     object-fit: cover;
 }
 @keyframes slide {
