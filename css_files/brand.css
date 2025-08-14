@@ -16,7 +16,7 @@ html, body {
 .banner img{
     
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 185px;
     
     width: 1200px;
     height: 500px;
@@ -268,7 +268,8 @@ html, body {
     color: white;
     position: relative;
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 0.1px;
+    
 }
 
 .footer::before {
