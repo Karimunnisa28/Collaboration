@@ -3,7 +3,7 @@ body{
     background-color: #f7dae7;
 }
 .navbar1 {
-    background: linear-gradient(90deg, #a55166, #c56767);
+    background: linear-gradient(90deg, #060606, #040404);
     padding: 15px 20px;
     position: fixed; 
     gap: 20px;
@@ -62,11 +62,11 @@ body{
     outline: none;
     font-size: 14px;
 }
-.search-btn, .cart-btn {
+.search-btn {
     padding: 8px 12px;
     border: none;
     background-color: white;
-    color: #c56767;
+    color:black;
     border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -76,7 +76,7 @@ body{
 }
 .navbar2 {
     position: fixed; 
-    background-color: rgba(255, 255, 255, 0.364); 
+    background-color: rgba(48, 47, 47, 0.8); 
     padding: 12px 0;
     text-align: center;
     top: 50px; 
@@ -90,7 +90,7 @@ body{
 .navbar2 a {
     display: inline-block;
     padding: 8px 20px;
-    color: black;
+    color: rgb(243, 240, 240);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, background 0.3s ease;
@@ -99,6 +99,91 @@ body{
     background-color: rgba(165, 81, 102, 0.1);
     border-radius: 5px;
     color: #a55166;
+}
+.banner {
+    margin-top: 10px;
+    width: 100%;
+    height: 900px;
+    
+    position: relative;
+}
+.slides {
+    display: flex;
+    width: auto;
+    animation: slide 82s infinite;
+}
+.slides img {
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Cart Button Animation */
+.cart-btn {
+    background: linear-gradient(135deg, #bec2d1 0%, #f5f1f4 100%);
+    border: none;
+    color: black;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(223, 110, 216, 0.4);
+}
+
+.cart-btn:hover {
+    background: linear-gradient(135deg, #d1d0d2 0%, #6b626a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102,126,234,0.6);
+    color: black;
+}
+
+.cart-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+    
+}
+
+.cart-btn:hover::before {
+    left: 100%;
+}
+
+.cart-btn i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+    color:black;
+}
+
+.cart-btn:hover i {
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newarrivals {
+        padding: 40px 15px;
+        margin: 20px 10px;
+    }
+    
+    #h {
+        font-size: 2rem;
+    }
+    
+    .card-img-wrapper {
+        height: 250px;
+    }
 }
 /* Page Header */
 /* .page-title {
