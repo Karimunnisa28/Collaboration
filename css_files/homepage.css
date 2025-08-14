@@ -72,11 +72,11 @@ html, body {
     outline: none;
     font-size: 14px;
 }
-.search-btn, .cart-btn {
+.search-btn {
     padding: 8px 12px;
     border: none;
     background-color: white;
-    color: #c56767;
+    color:black;
     border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -518,9 +518,9 @@ h1::after {
 
 /* Cart Button Animation */
 .cart-btn {
-    background: linear-gradient(135deg, #667eea 0%, #9160c2 100%);
+    background: linear-gradient(135deg, #bec2d1 0%, #f5f1f4 100%);
     border: none;
-    color: white;
+    color: black;
     padding: 12px 40px;
     border-radius: 50px;
     font-weight: 600;
@@ -528,14 +528,14 @@ h1::after {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+    box-shadow: 0 4px 15px rgba(223, 110, 216, 0.4);
 }
 
 .cart-btn:hover {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: linear-gradient(135deg, #d1d0d2 0%, #ea66e1 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102,126,234,0.6);
-    color: white;
+    color: black;
 }
 
 .cart-btn::before {
@@ -547,6 +547,7 @@ h1::after {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
     transition: left 0.5s ease;
+    
 }
 
 .cart-btn:hover::before {
@@ -556,6 +557,7 @@ h1::after {
 .cart-btn i {
     margin-right: 8px;
     transition: transform 0.3s ease;
+    color:black;
 }
 
 .cart-btn:hover i {
