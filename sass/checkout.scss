@@ -1,0 +1,104 @@
+@use "sass:color";
+$primary: #b43b59; // pink gradient start
+$secondary: #f8d7da; // light pink
+$text-color: #6a1f35;
+$font-stack: 'Segoe UI', sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $secondary;
+  color: $text-color;
+}
+
+.main-header {
+  background: linear-gradient(90deg, $primary, #d65a79);
+  color: white;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .search-box {
+    input {
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+    }
+    button {
+      background: none;
+      border: none;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.sub-header {
+  background: #f1f1f1;
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.checkout-section {
+  h2 {
+    font-weight: bold;
+    color: $primary;
+  }
+
+  .card {
+    border-radius: 15px;
+    background: white;
+    h4 {
+      color: $primary;
+      font-weight: bold;
+    }
+    .order-summary {
+      background: color.adjust($primary, $lightness: 40%);
+      padding: 15px;
+      border-radius: 10px;
+      h5 {
+        color: $text-color;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+
+.place-order-btn {
+  background-color: $primary;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
+}
+
+.order-summary {
+  background: color.adjust($primary, $lightness: 40%);
+}
+
+
+.footer {
+  background: $primary;
+  color: white;
+  font-size: 14px;
+}
