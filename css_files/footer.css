@@ -255,3 +255,25 @@
         height: 45px;
     }
 }
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 40px 0 0;
+    }
+    
+    .newsletter-section {
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .payment-methods {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}

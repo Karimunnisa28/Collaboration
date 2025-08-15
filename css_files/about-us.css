@@ -1,4 +1,9 @@
 /* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+.container.py-5 {
+    text-align: center;
+}
+
 * {
     margin: 0;
     padding: 0;
