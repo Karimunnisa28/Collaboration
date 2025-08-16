@@ -2,7 +2,6 @@
 .container.py-5 {
     text-align: center;
 }
-
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
@@ -71,19 +70,6 @@ body {
 .btn-add:hover {
     background-color: #7d3d4e;
 }
-
-
-/* Modal image */
-.modal-body img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.rating {
-    font-size: 1.2rem;
-    color: #ff9800;
-}
-
 
 .page-title {
   margin-top: 150px;
@@ -437,5 +423,4 @@ body {
         padding: 6px 12px;
     }
 }
-
 

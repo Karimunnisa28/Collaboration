@@ -46,6 +46,7 @@
 
     <div class="container-fluid page-container">
         <div class="row h-100">
+            <button class="filter-toggle-btn d-lg-none" onclick="toggleFilters()">Show Filters</button>
 
             <div class="col-md-3 filter-section">
                 <h5 class="fw-bold">FILTERS</h5>
@@ -362,7 +363,10 @@
             }
         }
 
+        function toggleFilters() {
+    const filterSection = document.querySelector('.filter-section');
+    filterSection.style.display = filterSection.style.display === 'block' ? 'none' : 'block';
+}
     </script>
 </body>
-
 </html>

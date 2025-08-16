@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+.container.py-5 {
+    text-align: center;
+}
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
@@ -295,5 +299,142 @@ body {
     font-size: 1.5rem;
     color: #A55166;
     cursor: pointer;
+}
+
+
+
+@media (max-width: 991px) {
+    /* Stack filter above products */
+    .page-container .row {
+        flex-direction: column;
+    }
+
+    .filter-section {
+        position: relative;
+        top: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .col-md-3.filter-section{
+         width: 70%; 
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .product-scroll-container {
+        overflow-x: hidden;
+    }
+}
+
+/* Small tablets & large mobiles (≤ 768px) */
+@media (max-width: 768px) {
+    /* 2 products per row */
+    .row.g-4 > div {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+
+    .product-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Modal slightly wider for touch devices */
+    .modal-content {
+        max-width: 350px;
+    }
+}
+
+/* Mobiles (≤ 576px) */
+@media (max-width: 576px) {
+    /* 1 product per row */
+    .row.g-4 > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .filter-section {
+        padding: 15px;
+    }
+
+    .filter-section h5 {
+        font-size: 1.2rem;
+    }
+
+    .filter-section label {
+        font-size: 0.9rem;
+    }
+
+    .apply-btn,
+    .reset-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Modal fullscreen look on small devices */
+    .modal {
+        padding-top: 100px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .modal img {
+        max-height: 180px;
+    }
+
+    .modal h3 {
+        font-size: 1rem;
+    }
+
+    .modal p {
+        font-size: 0.8rem;
+    }
+
+    .modal .price {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small phones (≤ 400px) */
+@media (max-width: 400px) {
+    .product-card img {
+        height: 160px;
+    }
+
+    .product-info h5 {
+        font-size: 0.95rem;
+    }
+
+    .product-info p {
+        font-size: 0.8rem;
+    }
+
+    .btn-add {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
 }
 
