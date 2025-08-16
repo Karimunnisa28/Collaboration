@@ -38,7 +38,7 @@
     </nav>
     <!-- Categories -->
     <section class="categories">
-        <h2>Makeup Categories</h2>
+        <h2>Bath & Body Categories</h2>
         <div class="category-list">
             <div class="category">
                 <img src="/images/showergel.avif" alt="Showergel">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </section>
-    <h1 style="align-content: center;">Deals of the Day</h1>
+    <h1 class="tophead" style="align-content: center;">Deals of the Day</h1>
     <div id="dealsCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
@@ -64,9 +64,10 @@
                     <div class="col-md-4">
                         <div class="item1">
                             <img src="../images/dovebodywash.jpg" alt="">
-                            
-                            <p class="pname">Dove exfoliating bodywash</p>
-                            <p>Rs. 599</p>
+
+                            <h1 class="pname">Dove exfoliating bodywash</h1>
+                            <p class="oldp">Rs. 700</p>
+                            <p class="newp">Rs. 599</p>
                             <button data-bs-toggle="modal" data-bs-target="#doveModal">
                                 <i class="fas fa-shopping-cart"></i> Add to Cart
                             </button>
@@ -76,17 +77,25 @@
                     <div class="col-md-4">
                         <div class="item1">
                             <img src="../images/chematplayrollon.jpg" alt="">
-                            <p class="pname">Chemist at Play underarm roll on</p>
-                            <p>Rs. 385</p>
-                            <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <h1 class="pname">Chemist at Play underarm roll on</h1>
+                            <p class="oldp" >Rs. 487</p>
+                            <p class="newp">Rs. 385</p>
+                            <button data-bs-toggle="modal" data-bs-target="#chemModal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="item1">
                             <img src="../images/wishcaresunlotion.avif" alt="">
-                            <p class="pname">Wishcare sunscreen bodylotion</p>
-                            <p>Rs. 487</p>
-                            <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <h1 class="pname">Wishcare sunscreen bodylotion</h1>
+                            <p class="oldp">Rs. 620</p>
+                            <p class="newp">Rs. 487</p>
+                            <button data-bs-toggle="modal" data-bs-target="#wishModal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -98,25 +107,37 @@
                     <div class="col-md-4">
                         <div class="item1">
                             <img src="../images/plumbodylotion.webp" alt="">
-                            <p class="pname">Plum Bodylotion</p>
-                            <p>Rs. 399</p>
-                            <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <h1 class="pname">Plum Bodylotion</h1>
+                           <p class="oldp">Rs. 535</p>
+                            <p class="newp">Rs. 399</p>
+                            <button data-bs-toggle="modal" data-bs-target="#plumModal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="item1">
                             <img src="../images/cetaphilbright.webp" alt="">
-                            <p class="pname">Cetaphil Brightening Cream</p>
-                            <p>Rs. 199</p>
-                            <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <h1 class="pname">Cetaphil Brightening Cream</h1>
+                            <p class="oldp">Rs. 275</p>
+                            <p class="newp">Rs. 199</p>
+                            <button data-bs-toggle="modal" data-bs-target="#cetModal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="item1">
                             <img src="../images/minimalistfaceserum.jpg" alt="">
-                            <p class="pname">Minimalist Face Serum</p>
-                            <p>Rs. 399</p>
-                            <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <h1 class="pname">Minimalist Face Serum</h1>
+                            <p class="oldp">Rs. 511</p>
+                            <p class="newp">Rs. 399</p>
+                            <button data-bs-toggle="modal" data-bs-target="#miniModal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -132,23 +153,508 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
-    <!-- Dove Body Wash Modal -->
+    <!-- Product Modal -->
     <div class="modal fade" id="doveModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Dove Body Wash</h5>
+                    <h5 class="modal-title">Dove exfoliating bodywash</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" style="background-color: #e2b4c1;">
-                    <img src="../images/dovebodywash.jpg" class="img-fluid mb-3" alt="">
-                    <p style="text-align: center;"><strong>Rs. ₹599</strong></p>
-                    <p>Gentle nourishing formula with a refreshing scent. Perfect for daily skincare.</p>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/dovebodywash.jpg" alt="Dove Body Wash">
+
+                    <p class="old-price">₹700</p>
+                    <p class="new-price">₹599</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
                 </div>
+
+
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                 </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="chemModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chemist at Play underarm roll on</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/chematplayrollon.jpg" alt="chematplay">
+
+                    <p class="old-price">₹487</p>
+                    <p class="new-price">₹385</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wishModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Wishcare sunscreen bodylotion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/wishcaresunlotion.avif" alt="wishcare">
+
+                    <p class="old-price">₹620</p>
+                    <p class="new-price">₹487</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="plumModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Plum Bodylotion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/plumbodylotion.webp" alt="plumlotion">
+
+                    <p class="old-price">₹535</p>
+                    <p class="new-price">₹399</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cetModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cetaphil Brightening Cream</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/cetaphilbright.webp" alt="cetaphil">
+
+                    <p class="old-price">₹275</p>
+                    <p class="new-price">₹199</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="miniModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minimalist Face Serum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/minimalistfaceserum.jpg" alt="Minimalist">
+
+                    <p class="old-price">₹511</p>
+                    <p class="new-price">₹399</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bestseller -->
+    <h1 class="tophead" style="align-content: center;">Bestsellers</h1>
+    <div id="bestCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item1">
+                            <img src="../images/best1.avif" alt="">
+
+                            <h1 class="pname">Carmesi Reusable Razors</h1>
+                            <p class="oldp">Rs. 249</p>
+                            <p class="newp">Rs. 175</p>
+                            <button data-bs-toggle="modal" data-bs-target="#best1Modal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item1">
+                            <img src="../images/best2.avif" alt="">
+                            <h1 class="pname">McCaffeine Undereye Cream</h1>
+                            <p class="oldp">Rs. 349</p>
+                            <p class="newp">Rs. 297</p>
+                            <button data-bs-toggle="modal" data-bs-target="#best2Modal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item1">
+                            <img src="../images/best3.avif" alt="">
+                            <h1 class="pname">Plix Detan Scrub</h1>
+                            <p class="oldp">Rs. 600</p>
+                            <p class="newp">Rs. 429</p>
+                            <button data-bs-toggle="modal" data-bs-target="#best3Modal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item1">
+                            <img src="../images/best4.avif" alt="">
+                            <h1 class="pname">Vaseline Gluta-Hye</h1>
+                            <p class="oldp">Rs. 350</p>
+                            <p class="newp">Rs. 298</p>
+                            <button data-bs-toggle="modal" data-bs-target="#best4Modal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item1">
+                            <img src="../images/best5.avif" alt="">
+                            <h1 class="pname">Nivea Deep Moisture</h1>
+                            <p class="oldp">Rs. 760</p>
+                            <p class="newp">Rs. 570</p>
+                            <button data-bs-toggle="modal" data-bs-target="#best5Modal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item1">
+                            <img src="../images/best6.avif" alt="">
+                            <h1 class="pname">Foxtale 2 in 1</h1>
+                            <p class="oldp">Rs. 477</p>
+                            <p class="newp">Rs. 349</p>
+                            <button data-bs-toggle="modal" data-bs-target="#best6Modal">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bestCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bestCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="modal fade" id="best1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carmesi Reusable Facial Razors (Pack of 3)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/best1.avif" alt="Dove Body Wash">
+
+                    <p class="old-price">₹249</p>
+                    <p class="new-price">175</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="best2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">McCaffeine Undereye Cream</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/best2.avif" alt="chematplay">
+
+                    <p class="old-price">₹349</p>
+                    <p class="new-price">₹298</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="best3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Plix Detan Scrub</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/best3.avif" alt="wishcare">
+
+                    <p class="old-price">₹600</p>
+                    <p class="new-price">₹429</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="best4Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vaseline Gluta-Hye Lotion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/best4.avif" alt="plumlotion">
+
+                    <p class="old-price">₹350</p>
+                    <p class="new-price">₹298</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="best5Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nivea Deep Moisture Lotion (600 ml)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/best5.avif" alt="cetaphil">
+
+                    <p class="old-price">₹760</p>
+                    <p class="new-price">₹570</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="best6Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Foxtale 2 in 1 (cleanser+remover)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img src="../images/best6.avif" alt="Minimalist">
+
+                    <p class="old-price">₹477</p>
+                    <p class="new-price">₹349</p>
+
+
+                    <div class="rating">
+                        <span class="rating-number">4.5</span>
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+
             </div>
         </div>
     </div>
