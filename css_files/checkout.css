@@ -491,4 +491,202 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 40px 0 0;
+    }
+    
+    .newsletter-section {
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .payment-methods {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+@media (max-width: 968px) {
+    .navbar1 {
+        flex-direction: row; 
+        gap: 10px;
+        padding: 10px 15px;
+    }
+    .logo {
+        font-size: 1.2rem;
+        position: static; 
+    }
+    .search-container {
+        position: static;
+        margin-left: auto; 
+    }
+    .navbar2 {
+        top: 50px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar1 {
+        padding: 10px 10px;
+        justify-content: space-between;
+    }
+    .navbar2 {
+        top: 45px; 
+        padding: 8px 0;
+        z-index: 1050;
+    }
+    .navbar2 a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    body {
+        padding-top: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar1 {
+        padding: 8px 10px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .logo i {
+        font-size: 1.4rem;
+    }
+    .search-bar {
+        width: 120px;
+        font-size: 12px;
+    }
+    .navbar2 {
+        top: 250px;
+        padding: 6px 0;
+    }
+    .navbar2 a {
+        padding: 5px 8px;
+        font-size: 0.85rem;
+    }
+    
+}
+
+
+
+@media (max-width: 992px) {
+    
+    .banner {
+        height: 600px;
+    }
+    .slides img {
+        height: 600px;
+    }
+
+    
+    .checkout-section {
+        padding: 0 20px;
+    }
+    .checkout-section h2 {
+        font-size: 1.8rem;
+    }
+    .checkout-section .card {
+        margin-bottom: 20px;
+    }
+
+   
+    .cart-btn {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .banner {
+        height: 400px;
+    }
+    .slides img {
+        height: 400px;
+    }
+
+    
+    .checkout-section {
+        padding: 0 15px;
+    }
+    .checkout-section h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .checkout-section .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    
+    .cart-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+   
+    .banner {
+        height: 250px;
+    }
+    .slides img {
+        height: 250px;
+    }
+
+    
+    .checkout-section h2 {
+        font-size: 1.4rem;
+    }
+    .checkout-section .card h4 {
+        font-size: 1rem;
+    }
+    .checkout-section .order-summary h5 {
+        font-size: 0.9rem;
+    }
+
+   
+    .cart-btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 40px 0 0;
+    }
+    
+    .newsletter-section {
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .payment-methods {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
 /*# sourceMappingURL=checkout.css.map */
