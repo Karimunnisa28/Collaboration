@@ -84,12 +84,111 @@ html, body {
 .search-btn:hover, .cart-btn:hover {
     background-color: #f0f0f0;
 }
+/* Dropdown Styles for Navbar1 */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown .dropdown-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-dropdown .dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.nav-dropdown .dropdown-link i {
+    font-size: 0.8em;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Force hide dropdown on page load */
+.navbar1 .nav-dropdown .dropdown-content {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2c2c2c;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    z-index: 1200;
+    margin-top: 0; /* Changed from 10px to 0 - removes gap */
+    padding-top: 10px; /* Add padding instead */
+    overflow: hidden;
+}
+
+/* Add a pseudo-element to bridge the gap */
+.nav-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+    display: none;
+}
+
+.nav-dropdown:hover::after {
+    display: block;
+}
+
+/* Show dropdown ONLY on hover */
+.navbar1 .nav-dropdown:hover .dropdown-content {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.nav-dropdown:hover .dropdown-link i {
+    transform: rotate(180deg);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    text-align: left;
+    cursor: pointer; /* Ensure pointer cursor */
+}
+
+.dropdown-content a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+}
 .navbar2 {
     position: fixed; 
     background-color: rgba(48, 47, 47, 0.8); 
     padding: 12px 0;
     text-align: center;
-    top: 50px; 
+    top: 60px; 
     left: 0; 
     right: 0; 
     backdrop-filter: blur(15px); 
