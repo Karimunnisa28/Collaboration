@@ -401,11 +401,6 @@ body {
     padding: 15px;
 
 }
-#bestCarousel .carousel-inner {
-    background-color: #f7dae7;
-    padding: 15px;
-
-}
 
 .tophead {
     text-align: center;
@@ -478,19 +473,6 @@ text-decoration: line-through;
     color: black;
     
 }
-#bestCarousel .item .oldp{
-text-decoration: line-through; 
-    font-weight: lighter;
-    font-size: 1.3rem;
-    color: black;
-}
-#bestCarousel .item .newp{
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: black;
-    
-}
-
 .pname{
     font-size: 20px;
     margin: 0 0;
