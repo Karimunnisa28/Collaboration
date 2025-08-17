@@ -229,8 +229,9 @@ body {
     padding: 10px;
 }
 .scroll-content::-webkit-scrollbar {
-    display: none;
+    display: none; /* Hide scrollbar for cleaner look */
 }
+
 .scroll-btn {
     position: absolute;
     top: 50%;
@@ -250,8 +251,9 @@ body {
 }
 
 /* Product Card Responsive Sizing */
+/* Product Card Responsive Sizing - Horizontal Scroll */
 .product-card {
-    flex: 0 0 20%;   /* ~5 per row on large screens */
+    flex: 0 0 20%;   /* About 5 per row on desktop */
     min-width: 200px;
     max-width: 250px;
     border: none;
@@ -262,21 +264,22 @@ body {
     border-radius: 8px;
 }
 
-/* Tablet (2–3 per view) */
+/* Tablet - show ~3 cards in view */
 @media (max-width: 992px) {
     .product-card {
-        flex: 0 0 30%;  /* ~3 per row */
+        flex: 0 0 30%;   /* ~3 per scroll viewport */
         min-width: 180px;
     }
 }
 
-/* Mobile (1–2 per view) */
+/* Mobile - show 1 big card at a time */
 @media (max-width: 576px) {
     .product-card {
-        flex: 0 0 70%;  /* ~1 per row */
+        flex: 0 0 80%;   /* ~1 per view, swipe left/right */
         min-width: 160px;
     }
 }
+
 
 
 /* All your existing styles BEFORE footer remain unchanged */
@@ -771,3 +774,22 @@ body {
     }
     
 }
+/* Responsive Section Headings */
+.bestsellers h2,
+.newarrivals h2,
+.celebrate h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* auto scales between mobile and desktop */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Mobile spacing adjustments */
+@media (max-width: 576px) {
+    .bestsellers h2,
+    .newarrivals h2,
+    .celebrate h2 {
+        margin-bottom: 15px;
+    }
+}
+
