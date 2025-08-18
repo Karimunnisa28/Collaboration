@@ -35,9 +35,99 @@
         <a href="#products">New Arrivals</a>
         <a href="#contact">Brand</a>
     </nav>
+    <!-- Mobile Header (shown only in mobile view) -->
+<div class="mobile-header">
+    <!-- Hamburger button -->
+    <label for="hamburger-toggle" class="mobile-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+   
+    <div class="logo">
+        <i class="fas fa-crown"></i>
+        <span>BellaBeauty</span>
+    </div>
+</div>
+
+   
+<input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
+<label for="hamburger-toggle" class="mobile-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <div class="logo">
+            <i class="fas fa-crown"></i>
+            <span>BellaBeauty</span>
+        </div>
+        <label for="hamburger-toggle" class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </label>
+    </div>
+    
+    <div class="mobile-menu-search">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="search-btn">🔍</button>
+    </div>
+    
+    <div class="mobile-menu-content">
+        
+        <div class="mobile-menu-section">
+            <a href="../homepage/homepage.html" class="mobile-menu-link">Home</a>
+            <a href="../aboutUs/about-us.html" class="mobile-menu-link">About Us</a>
+            
+            
+            <input type="checkbox" id="products-toggle" class="dropdown-checkbox">
+            <label for="products-toggle" class="mobile-dropdown-toggle">
+                Products <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="mobile-dropdown-content">
+                <a href="../makeup/makeup.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-palette"></i> Makeup
+                </a>
+                <a href="../skincare/index.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-leaf"></i> Skincare
+                </a>
+                <a href="../fragrance/fragrance.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-spray-can"></i> Fragrance
+                </a>
+                <a href="../hair/hair.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-cut"></i> Hair
+                </a>
+                <a href="../bathandbody/bathbody.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-spa"></i> Body & Wellness
+                </a>
+            </div>
+            
+            <a href="../services/services.html" class="mobile-menu-link">Contact</a>
+        </div>
+        
+        
+        <div class="mobile-menu-section">
+            <a href="#category" class="mobile-menu-link">Categories</a>
+            <a href="#dealsCarousel" class="mobile-menu-link">Offer</a>
+            <a href="#h" class="mobile-menu-link">New Arrivals</a>
+            <a href="../brand/brand.html" class="mobile-menu-link">Brand</a>
+        </div>
+        
+       
+        <a href="../cartpage/cartboot.html" class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Cart
+        </a>
+    </div>
+</div>
+
+
+<label for="hamburger-toggle" class="mobile-menu-overlay"></label>
     <div class="container-md" id="topic" style="margin-top: 150px;">
-        <h2 id="catname">Bodycare</h2>
-        <p id="catdesc">Discover our premium yet most affordable range of collections</p>
+        <h2 id="catname" style="color: maroon;">Bodycare</h2>
+        <p id="catdesc" style="color: maroon;">Discover our premium yet most affordable range of collections</p>
     </div>
     <!-- filter -->
     <div class="container-fluid">
@@ -82,10 +172,11 @@
             </div>
             <!-- Product Grid -->
             <div class="col-md-9">
-                <div class="row g-4 p-3">
+                <div class="row g-4 p-3 justify-content-center">
 
                     <!-- Product 1 -->
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4"> -->
+                        <div class="col-12 col-md-6 col-lg-4">
                         <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal1">
                             <img src="../images/bodycare1.avif" class="card-img-top" alt="Lipstick">
                             <div class="card-body">
@@ -100,7 +191,7 @@
                     </div>
 
                     <!-- Product 2 -->
-                    <div class="col-md-4">
+                   <div class="col-12 col-md-6 col-lg-4">
                         <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal2">
                             <img src="../images/bodycare2.avif" class="card-img-top" alt="">
                             <div class="card-body">
@@ -115,7 +206,7 @@
                     </div>
 
                     <!-- Product 3 -->
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal3">
                             <img src="../images/bodycare3.avif" class="card-img-top" alt="Lipstick">
                             <div class="card-body">
@@ -131,7 +222,7 @@
                     </div>
 
                     <!-- Product 4 -->
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal4">
                             <img src="../images/bodycare4.avif" class="card-img-top" alt="Lipstick">
                             <div class="card-body">
@@ -146,7 +237,7 @@
                     </div>
 
                     <!-- Product 5 -->
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal5">
                             <img src="../images/bodycare5.jpg" class="card-img-top" alt="Lipstick">
                             <div class="card-body">
@@ -161,7 +252,7 @@
                     </div>
 
                     <!-- Product 6 -->
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="card product-card" data-bs-toggle="modal" data-bs-target="#productModal6">
                             <img src="../images/bodycare6.jpg" class="card-img-top" alt="Lipstick">
                             <div class="card-body">
