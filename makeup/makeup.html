@@ -39,6 +39,95 @@
         <a href="#products">New Arrivals</a>
         <a href="#contact">Brand</a>
     </nav>
+    <!-- Mobile Header (shown only in mobile view) -->
+  <div class="mobile-header">
+    <!-- Hamburger button -->
+    <label for="hamburger-toggle" class="mobile-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+
+    <div class="logo">
+      <i class="fas fa-crown"></i>
+      <span>BellaBeauty</span>
+    </div>
+  </div>
+
+
+  <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
+  <label for="hamburger-toggle" class="mobile-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <i class="fas fa-crown"></i>
+        <span>BellaBeauty</span>
+      </div>
+      <label for="hamburger-toggle" class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+      </label>
+    </div>
+
+    <div class="mobile-menu-search">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="mobile-menu-content">
+
+      <div class="mobile-menu-section">
+        <a href="../homepage/homepage.html" class="mobile-menu-link">Home</a>
+        <a href="../aboutUs/about-us.html" class="mobile-menu-link">About Us</a>
+
+
+        <input type="checkbox" id="products-toggle" class="dropdown-checkbox">
+        <label for="products-toggle" class="mobile-dropdown-toggle">
+          Products <i class="fas fa-chevron-down"></i>
+        </label>
+        <div class="mobile-dropdown-content">
+          <a href="../makeup/makeup.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+            <i class="fas fa-palette"></i> Makeup
+          </a>
+          <a href="../skincare/index.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+            <i class="fas fa-leaf"></i> Skincare
+          </a>
+          <a href="../fragrance/fragrance.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+            <i class="fas fa-spray-can"></i> Fragrance
+          </a>
+          <a href="../hair/hair.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+            <i class="fas fa-cut"></i> Hair
+          </a>
+          <a href="../bathandbody/bathbody.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+            <i class="fas fa-spa"></i> Body & Wellness
+          </a>
+        </div>
+
+        <a href="../services/services.html" class="mobile-menu-link">Contact</a>
+      </div>
+
+
+      <div class="mobile-menu-section">
+        <a href="#category" class="mobile-menu-link">Categories</a>
+        <a href="#dealsCarousel" class="mobile-menu-link">Offer</a>
+        <a href="#h" class="mobile-menu-link">New Arrivals</a>
+        <a href="../brand/brand.html" class="mobile-menu-link">Brand</a>
+      </div>
+
+
+      <a href="../cartpage/cartboot.html" class="cart-btn">
+        <i class="fas fa-shopping-cart"></i> Cart
+      </a>
+    </div>
+  </div>
+  <label for="hamburger-toggle" class="mobile-menu-overlay"></label>
+
 
 
     <!-- Categories -->
