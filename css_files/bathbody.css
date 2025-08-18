@@ -671,9 +671,6 @@ body {
     font-size: 2rem;
     height: 100px;
     color: #a55166;
-    border-bottom: 3px solid #a55166;
-    border-image: linear-gradient(to right, #a55166, #f7dae7);
-    border-image-slice: 1;
     /* background-color: #a54b64; */
     /* margin-top: 20px;
     margin-bottom: 20px; */
