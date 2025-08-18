@@ -97,6 +97,7 @@
 /* Push content below fixed navbars */
 body {
     padding-top: 120px; /* adjust if needed */
+    background-color: #FAF9F6;
 }
 /* Center align FACEWASH heading */
 .bestsellers h2 {
