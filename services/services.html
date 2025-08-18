@@ -86,7 +86,7 @@ body {
     }
     /* Mobile header container */
 .mobile-header {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center; /* hamburger left, logo right */
   background: black;
@@ -120,6 +120,10 @@ body {
     .navbar2 {
         display: none !important; /* Ensure navbars stay hidden on smaller screens */
     }
+    .mobile-header {
+    display: flex; /* show black BellaBeauty bar only on mobile */
+    }
+
     
     body {
         padding-top: 0;
@@ -361,7 +365,7 @@ body {
         display: none; /* Hides desktop navbars on mobile */
     }
     body {
-        background-color: black;
+        background-color: white;
     }
 }
 
