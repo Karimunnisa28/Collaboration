@@ -783,6 +783,20 @@ h1::after {
         font-size: 2rem;
     }
 }
+
+.video-section {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.video-section video {
+    width: 100%;
+    height: 800px;
+    display: block;
+    object-fit: cover;
+}
+
 .item1 {
     height: 350px;
    background: linear-gradient(135deg, #232325 0%, #1d1c1d 100%);
