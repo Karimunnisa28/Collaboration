@@ -1,6 +1,7 @@
 /* Navbar */
 body{
-    background-color: #f7dae7;
+        background: linear-gradient(135deg, #f8e6e9, #c04a5a, #800020);
+
 }
 
 
@@ -204,7 +205,7 @@ body{
 .page-title {
     margin-top: 130px;
     font-weight: bold;
-    color: #b04c61;
+    color: maroon;
     font-size: 2.5rem; /* Larger, more prominent */
     text-align: center;
     letter-spacing: 1px;
@@ -218,14 +219,14 @@ body{
     display: block;
     width: 80px;
     height: 4px;
-    background: #b04c61;
+    background: maroon;
     margin: 10px auto 0;
     border-radius: 2px;
 }
 
 /* Page Subtitle */
 .page-subtitle {
-    color: #6b4b57;
+    color: #572336;
     font-size: 1.2rem;
     text-align: center;
     margin-top: 10px;
@@ -676,29 +677,6 @@ body{
     box-shadow: 0 6px 20px rgba(231,76,60,0.6);
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        padding: 40px 0 0;
-    }
-    
-    .newsletter-section {
-        text-align: center;
-        padding: 30px 20px;
-    }
-    
-    .payment-methods {
-        text-align: center;
-        margin-top: 15px;
-    }
-    
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-    }
-}
-
 @media (max-width: 991px) {
     .navbar1 {
         flex-direction: row;
@@ -746,143 +724,360 @@ body{
     }
 
 
+
+
+.modal-body {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+    .modal-body img {
+        width: 80% !important;
+        max-width: 300px !important;
+        margin-bottom: 20px;
+        margin-right: 0 !important;
+    }
+    
+    .modal-content {
+        padding: 20px;
+    }
+    
+    .modal-dialog {
+        max-width: 500px;
+    }
+    
+    /* Adjust modal header/footer if needed */
+    .modal-header, 
+    .modal-footer {
+        padding: 15px 20px;
+    }
+    
+    /* Center the product details */
+    .modal-body > div {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Stack the action buttons */
+    .modal-body .d-flex {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modal-body .btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
+
+/* Add this to your existing CSS */
 
 @media (max-width: 767px) {
     .container-fluid {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* Remove min-height if it was set previously */
     }
 
     .filter-section {
-        flex: 0 0 40%;
-        max-width: 40%;
+        flex: 0 0 auto;
+        max-width: 100%;
         position: static;
         padding: 15px;
         margin-bottom: 0;
         height: auto;
         overflow-y: auto;
+        order: 1;
     }
 
     .col-md-9 {
-        flex: 0 0 60%;
-        max-width: 60%;
+        flex: 0 0 auto;
+        max-width: 100%;
         padding: 15px;
+        order: 2;
     }
 
+    /* Products grid - 2 columns */
     .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
-    .filter-section div {
-        column-count: 1;
-    }
-
-    .price-range-wrapper {
-        flex-direction: column;
-    }
-
-    .navbar1 {
-        padding: 10px 10px;
-        justify-content: space-between;
-    }
-
-    .navbar2 {
-        top: 75px;
-        padding: 8px 0;
-        z-index: 1050;
-    }
-
-    .navbar2 a {
-        padding: 6px 10px;
-        font-size: 0.9rem;
-    }
-    .search-container {
-    width: 200px;       /* Make it smaller */
-    margin-left: 10px;  /* Reduce margin */
-  }
-
-  .search-container input {
-    width: 100%;        /* Fit inside container */
-    font-size: 14px;    /* Slightly smaller text */
-    padding: 5px;       /* Compact padding */
-  }
-    body {
-        padding-top: 0;
-    }
-
-
-    .footer-content {
-        padding: 40px 0 0;
-    }
-    
-    .newsletter-section {
-        text-align: center;
-        padding: 30px 20px;
-    }
-    
-    .payment-methods {
-        text-align: center;
-        margin-top: 15px;
-    }
-    
-   
-
-
-    .col-lg-4,
-    .col-lg-2 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .page-title {
-        margin-top: 80px;
-        font-size: 2rem;
+    /* Footer positioning */
+    .footer {
+        order: 3;
         width: 100%;
+        margin-top: 20px; /* Add some spacing */
     }
-
-    .page-subtitle {
-        font-size: 1rem;
-        width: 100%;
-    }
-   .cart-btn {
-        padding: 8px;
-        gap: 0; /* Remove gap between icon and text */
-        font-size: smaller;
-    }
-    
-    
 }
 
 @media (max-width: 480px) {
     .filter-section {
-        flex: 0 0 45%;
-        max-width: 45%;
         padding: 10px;
     }
 
     .col-md-9 {
-        flex: 0 0 55%;
-        max-width: 55%;
         padding: 10px;
     }
 
-    .filter-section label,
-    .filter-section div {
-        font-size: 0.9rem;
+    /* Keep products in 2 columns */
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
-
-    .apply-btn,
-    .reset-btn {
-        padding: 8px;
-        font-size: 0.9rem;
+    .footer {
+        margin-top: 15px; /* Slightly less spacing on very small screens */
     }
+}
+/* Mobile header container */
+.mobile-header {
+    position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* hamburger left, logo right */
+  background: black;
+  padding: 25px 15px;
+}
+
+/* Hamburger icon */
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+/* BellaBeauty logo */
+.mobile-logo {
+  color: white;
+  font-size: 58px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-logo i {
+  color: #ff66b2; /* pink crown */
+  
+}
 
 
-    .logo span {
-        display: none;
+/* Hide the checkbox used for toggling */
+.hamburger-checkbox {
+    display: none;
+}
+
+/* Hamburger button */
+.mobile-hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1200;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.mobile-hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation when checked */
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1150;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.hamburger-checkbox:checked ~ .mobile-menu-overlay {
+    opacity: 1;
+    display: block;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #060606, #040404);
+    z-index: 1200;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.hamburger-checkbox:checked ~ .mobile-menu {
+    left: 0;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu-search {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-search .search-bar {
+    flex: 1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.mobile-menu-search .search-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-content {
+    padding: 20px;
+}
+
+.mobile-menu-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-link:hover {
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* Mobile Dropdown using checkbox */
+.dropdown-checkbox {
+    display: none;
+}
+
+.mobile-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 12px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* Dropdown Icon (arrow) */
+.mobile-dropdown-toggle::after {
+    content: "▶";
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when expanded */
+.dropdown-checkbox:checked + .mobile-dropdown-toggle::after {
+    transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.mobile-dropdown-content {
+    display: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.dropdown-checkbox:checked ~ .mobile-dropdown-content {
+    display: block;
+}
+
+.mobile-dropdown-link {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.mobile-dropdown-link:hover {
+    color: #667eea;
+}
+
+/* Show hamburger only on small screens */
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+    .mobile-hamburger {
+        display: block;
     }
+    .navbar1,
+    .navbar2 {
+        display: none; /* Hides desktop navbars on mobile */
+    }
+ 
+    /* body {
+        background-color: black;
+    } */
+     .page-title {
+    margin-top: 0px;}
+   
 }
