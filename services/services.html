@@ -84,6 +84,290 @@ body {
     .search-btn:hover, .cart-btn:hover {
         background-color: #f0f0f0;
     }
+    /* Mobile header container */
+.mobile-header {
+  display: none;
+  align-items: center;
+  justify-content: center; /* hamburger left, logo right */
+  background: black;
+  padding: 25px 15px;
+}
+/* Hide desktop navbars on mobile */
+@media (max-width: 768px) {
+    .navbar1,
+    .navbar2 {
+        display: none !important; /* Hide both navbars completely on mobile */
+    }
+    
+    .mobile-hamburger {
+        display: block;
+    }
+    
+    body {
+        background-color: black;
+        padding-top: 0; /* Remove top padding since navbars are hidden */
+    }
+    
+    /* Adjust container positioning */
+    .container {
+        margin-top: 20px; /* Add some top margin to separate from top of screen */
+    }
+}
+
+/* Additional mobile adjustments */
+@media (max-width: 480px) {
+    .navbar1,
+    .navbar2 {
+        display: none !important; /* Ensure navbars stay hidden on smaller screens */
+    }
+    .mobile-header {
+    display: flex; /* show black BellaBeauty bar only on mobile */
+    }
+
+    
+    body {
+        padding-top: 0;
+    }
+}
+
+/* Hamburger icon */
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+/* BellaBeauty logo */
+.mobile-logo {
+  color: white;
+  font-size: 58px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-logo i {
+  color: #ff66b2; /* pink crown */
+  
+}
+
+
+/* Hide the checkbox used for toggling */
+.hamburger-checkbox {
+    display: none;
+}
+
+/* Hamburger button */
+.mobile-hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1200;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.mobile-hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation when checked */
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1150;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.hamburger-checkbox:checked ~ .mobile-menu-overlay {
+    opacity: 1;
+    display: block;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #060606, #040404);
+    z-index: 1200;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.hamburger-checkbox:checked ~ .mobile-menu {
+    left: 0;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu-search {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-search .search-bar {
+    flex: 1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.mobile-menu-search .search-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-content {
+    padding: 20px;
+}
+
+.mobile-menu-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-link:hover {
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* Mobile Dropdown using checkbox */
+.dropdown-checkbox {
+    display: none;
+}
+
+.mobile-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 12px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* Dropdown Icon (arrow) */
+.mobile-dropdown-toggle::after {
+    content: "▶";
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when expanded */
+.dropdown-checkbox:checked + .mobile-dropdown-toggle::after {
+    transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.mobile-dropdown-content {
+    display: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.dropdown-checkbox:checked ~ .mobile-dropdown-content {
+    display: block;
+}
+
+.mobile-dropdown-link {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.mobile-dropdown-link:hover {
+    color: #667eea;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+    .mobile-hamburger {
+        display: block;
+    }
+}
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+    .mobile-hamburger {
+        display: block;
+    }
+    .navbar1,
+    .navbar2 {
+        display: none; /* Hides desktop navbars on mobile */
+    }
+    body {
+        background-color: white;
+    }
+}
 
     /* ---------------- NAVBAR 2 ---------------- */
     .navbar2 {
@@ -457,6 +741,98 @@ body {
     <a href="#new">New Arrivals</a>
     <a href="#brand">Brand</a>
 </nav>
+ <!-- Mobile Header (shown only in mobile view) -->
+<div class="mobile-header">
+    <!-- Hamburger button -->
+    <label for="hamburger-toggle" class="mobile-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+   
+    <div class="logo">
+        <i class="fas fa-crown"></i>
+        <span>BellaBeauty</span>
+    </div>
+</div>
+
+   
+<input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
+<label for="hamburger-toggle" class="mobile-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <div class="logo">
+            <i class="fas fa-crown"></i>
+            <span>BellaBeauty</span>
+        </div>
+        <label for="hamburger-toggle" class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </label>
+    </div>
+    
+    <div class="mobile-menu-search">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="search-btn">🔍</button>
+    </div>
+    
+    <div class="mobile-menu-content">
+        
+        <div class="mobile-menu-section">
+            <a href="../homepage/homepage.html" class="mobile-menu-link">Home</a>
+            <a href="../aboutUs/about-us.html" class="mobile-menu-link">About Us</a>
+            
+            
+            <input type="checkbox" id="products-toggle" class="dropdown-checkbox">
+            <label for="products-toggle" class="mobile-dropdown-toggle">
+                Products <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="mobile-dropdown-content">
+                <a href="../makeup/makeup.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-palette"></i> Makeup
+                </a>
+                <a href="../skincare/index.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-leaf"></i> Skincare
+                </a>
+                <a href="../fragrance/fragrance.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-spray-can"></i> Fragrance
+                </a>
+                <a href="../hair/hair.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-cut"></i> Hair
+                </a>
+                <a href="../bathandbody/bathbody.html" style="color: rgb(242, 239, 239); text-decoration: none;">
+                    <i class="fas fa-spa"></i> Body & Wellness
+                </a>
+            </div>
+            
+            <a href="../services/services.html" class="mobile-menu-link">Contact</a>
+        </div>
+        
+        
+        <div class="mobile-menu-section">
+            <a href="#category" class="mobile-menu-link">Categories</a>
+            <a href="#dealsCarousel" class="mobile-menu-link">Offer</a>
+            <a href="#h" class="mobile-menu-link">New Arrivals</a>
+            <a href="../brand/brand.html" class="mobile-menu-link">Brand</a>
+        </div>
+        
+       
+        <a href="../cartpage/cartboot.html" class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Cart
+        </a>
+    </div>
+</div>
+
+
+<label for="hamburger-toggle" class="mobile-menu-overlay"></label>
+
+    
 
 <div class="container">
     <div class="search-bar-page">

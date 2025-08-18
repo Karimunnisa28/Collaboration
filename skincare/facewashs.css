@@ -73,7 +73,7 @@
     background-color: rgba(48, 47, 47, 0.8); 
     padding: 12px 0;
     text-align: center;
-    top: 50px; 
+    top: 40px; 
     left: 0; 
     right: 0; 
     backdrop-filter: blur(15px); 
@@ -84,7 +84,7 @@
 .navbar2 a {
     display: inline-block;
     padding: 8px 20px;
-    color: rgb(243, 240, 240);
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, background 0.3s ease;
@@ -104,7 +104,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #333;
+    color: maroon;
 }
 
 /* Cart Button Animation */
@@ -211,7 +211,7 @@ body {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #fff;
+    background: linear-gradient(135deg, #f8e6e9, #c04a5a, #800020);
     color: black;
 }
 
@@ -250,14 +250,14 @@ body {
 
 /* Navbar 2 */
 .navbar2 {
-    background-color: #f7dae7;
+    background-color: rgba(48, 47, 47, 0.8);
     padding: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 .navbar2 a {
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 
@@ -279,6 +279,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 /* Product Card */
 .product-card {
@@ -613,3 +614,306 @@ body {
 .footer-subtitle { font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; color: #ecf0f1; }
 .newsletter-section { background: rgba(0,0,0,0.2); padding: 40px 30px; border-radius: 15px; margin: 40px 0; }
 .back-to-top { position: fixed; bottom: 20px; right: 20px; background-color: #e83333; color: white; padding: 12px 16px; border-radius: 50%; }
+/* Mobile header container */
+.mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* hamburger left, logo right */
+  background: black;
+  padding: 25px 15px;
+}
+
+/* Hamburger icon */
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+/* BellaBeauty logo */
+.mobile-logo {
+  color: white;
+  font-size: 58px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-logo i {
+  color: #ff66b2; /* pink crown */
+  
+}
+
+
+/* Hide the checkbox used for toggling */
+.hamburger-checkbox {
+    display: none;
+}
+
+/* Hamburger button */
+.mobile-hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1200;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.mobile-hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation when checked */
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-checkbox:checked ~ .mobile-hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1150;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.hamburger-checkbox:checked ~ .mobile-menu-overlay {
+    opacity: 1;
+    display: block;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #060606, #040404);
+    z-index: 1200;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.hamburger-checkbox:checked ~ .mobile-menu {
+    left: 0;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu-search {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-search .search-bar {
+    flex: 1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.mobile-menu-search .search-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-content {
+    padding: 20px;
+}
+
+.mobile-menu-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-link:hover {
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* Mobile Dropdown using checkbox */
+.dropdown-checkbox {
+    display: none;
+}
+
+.mobile-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 12px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: #667eea;
+    padding-left: 10px;
+}
+
+/* Dropdown Icon (arrow) */
+.mobile-dropdown-toggle::after {
+    content: "▶";
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when expanded */
+.dropdown-checkbox:checked + .mobile-dropdown-toggle::after {
+    transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.mobile-dropdown-content {
+    display: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.dropdown-checkbox:checked ~ .mobile-dropdown-content {
+    display: block;
+}
+
+.mobile-dropdown-link {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.mobile-dropdown-link:hover {
+    color: #667eea;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+    .mobile-hamburger {
+        display: block;
+    }
+    .navbar1,
+    .navbar2 {
+        display: none; /* Hides desktop navbars on mobile */
+    }
+    body {
+        background-color: white; /* Keep page background white */
+    }
+
+    /* Mobile top bar for BellaBeauty */
+    .mobile-header {
+        display: flex;
+        justify-content: center;   /* center BellaBeauty */
+        align-items: center;
+        background: black;
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1200;
+    }
+
+    .mobile-logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    /* Push content below header */
+    body {
+        padding-top: 70px;
+    }
+}
+/* === VISIBILITY FIXES (keep these last) === */
+.mobile-header { 
+  display: none !important;  /* hide by default (desktop) */
+}
+
+@media (max-width: 768px) {
+  /* show the black bar only on mobile */
+  .mobile-header {
+    display: flex !important;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 15px 15px;
+    background: black;
+    z-index: 1200;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-hamburger {
+    display: block !important;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* hide the desktop navbars on mobile */
+  .navbar1, .navbar2 { 
+    display: none !important; 
+  }
+
+  /* keep page background white on mobile */
+  body { 
+    background: linear-gradient(135deg, #f8e6e9, #c04a5a, #800020); 
+    padding-top: 70px !important; 
+  }
+}
