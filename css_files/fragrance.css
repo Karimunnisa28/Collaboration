@@ -40,13 +40,11 @@ body {
     z-index: 1;
 }
 
-/* Remove default link styles */
 .category-link {
     text-decoration: none;
     color: inherit;
 }
 
-/* Circle card */
 .category-card {
     background: linear-gradient(135deg, #f8d7da, #fde2e4);
     border-radius: 50%;
@@ -69,9 +67,8 @@ body {
     transform: scale(1.05);
 }
 
-/* Category text */
 .categories p {
-    font-weight: 700; /* bold text */
+    font-weight: 700; 
     color: #ffffff;
     margin-top: 5px;
     font-size: 1rem;
@@ -82,12 +79,12 @@ body {
 }
 
 .section-title {
-    font-size: 1.6rem; /* slightly bigger */
+    font-size: 1.6rem; 
     font-weight: 700;
     margin-bottom: 20px;
     color: #A55166;
-    text-transform: uppercase; /* all caps for emphasis */
-    letter-spacing: 1.5px; /* spaced out letters */
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
     position: relative;
     display: inline-block;
 }
@@ -103,14 +100,13 @@ body {
     display: inline-block; 
 }
 
-/* Keep your underline but center it */
 .section-title::after {
     content: "";
     display: block;
     width: 50px;
     height: 3px;
     background-color: #A55166;
-    margin: 6px auto 0; /* auto centers underline */
+    margin: 6px auto 0; 
     border-radius: 2px;
     transition: width 0.3s ease;
 }
@@ -121,12 +117,10 @@ body {
 
 
 
-/* Scroll wrapper */
 .scroll-wrapper {
     position: relative;
 }
 
-/* Arrow buttons */
 .scroll-arrow {
     position: absolute;
     top: 50%;
@@ -155,7 +149,6 @@ body {
     right: -20px;
 }
 
-/* Keep your existing product scroll styles */
 .product-scroll {
     display: flex;
     gap: 15px;
@@ -168,7 +161,6 @@ body {
     display: none;
 }
 
-/* Product Card Styles (unchanged) */
 .product-card {
     background: #E2B4C1;
     border-radius: 15px;
@@ -229,7 +221,6 @@ body {
 .btn-add:hover {
     background-color: #7d3d4e;
 }
-/* Modal overlay */
 .modal {
     display: none; 
     position: fixed;
@@ -243,7 +234,6 @@ body {
     background-color: rgba(0,0,0,0.6);
 }
 
-/* Modal content box - product card size */
 .modal-content {
     background-color: #fff;
     margin: auto;
@@ -256,7 +246,6 @@ body {
     position: relative;
 }
 
-/* Modal animation */
 @keyframes scaleIn {
     from { transform: scale(0.7); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -264,7 +253,7 @@ body {
 
 .modal img {
     width: 100%;
-    max-height: 220px; /* product card ke height ke similar */
+    max-height: 220px; 
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -290,7 +279,6 @@ body {
     color: #A55166;
 }
 
-/* Close button */
 .modal-close {
     position: absolute;
     top: 8px;
@@ -300,7 +288,6 @@ body {
     cursor: pointer;
 }
 
-/* Modal animation */
 @keyframes scaleIn {
     from { transform: scale(0.7); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
