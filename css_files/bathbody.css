@@ -721,13 +721,13 @@ body {
     color: black;
     
 }
-#bestCarousel .item .oldp{
-text-decoration: line-through; 
+#bestCarousel .item1 .oldp{
+text-decoration: line-through !important; 
     font-weight: lighter;
     font-size: 1.3rem;
     color: black;
 }
-#bestCarousel .item .newp{
+#bestCarousel .item1 .newp{
     font-size: 1.3rem;
     font-weight: bold;
     color: black;
